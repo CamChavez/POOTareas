@@ -1,0 +1,75 @@
+public class Vehiculo {
+    protected String tipo;
+    protected int ruedas;
+    protected int puertas;
+    protected String modelo;
+    protected int velocidadmaxima;
+
+    public Vehiculo() {
+    }
+
+    public Vehiculo(String tipo, int ruedas, int puertas, String modelo, int velocidadmaxima) {
+        this.tipo = tipo;
+        this.ruedas = ruedas;
+        this.puertas = puertas;
+        this.modelo = modelo;
+        this.velocidadmaxima = velocidadmaxima;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getRuedas() {
+        return ruedas;
+    }
+
+    public void setRuedas(int ruedas) {
+        this.ruedas = ruedas;
+    }
+
+    public int getPuertas() {
+        return puertas;
+    }
+
+    public void setPuertas(int puertas) {
+        this.puertas = puertas;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String matricula) {
+        this.modelo = matricula;
+    }
+
+    public int getVelocidadmaxima() {
+        return velocidadmaxima;
+    }
+
+    public void setVelocidadmaxima(int velocidadmaxima) {
+        this.velocidadmaxima = velocidadmaxima;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "tipo='" + tipo + '\'' +
+                ", ruedas=" + ruedas +
+                ", puertas=" + puertas +
+                ", matricula='" + modelo + '\'' +
+                ", velocidadmaxima=" + velocidadmaxima +
+                '}';
+    }
+    public void avanzar(){
+        System.out.println("el vehiculo está avanzando");
+    }
+    public void retroceder(){
+        System.out.println("El vehiculo esta retrocediendo");
+    }
+}
